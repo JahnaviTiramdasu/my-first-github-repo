@@ -44,7 +44,6 @@ public class ProductManagement {
             System.out.println("Available " + isAvailable);
             System.out.println("Performance Rating" + rating);
 
-
         }
     }
 

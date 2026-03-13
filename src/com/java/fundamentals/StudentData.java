@@ -44,13 +44,6 @@ public class StudentData {
             System.out.println("Performance Rating" + performance);
 
 
-
-
-
-
-
-
-
         }
 
     }
