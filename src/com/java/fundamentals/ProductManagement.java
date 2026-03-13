@@ -40,7 +40,7 @@ public class ProductManagement {
             System.out.println("Quantity " + quantity);
             System.out.println("Price" + unitPrice);
             System.out.println("Discount" + discount);
-            System.out.println("Suplier Contact" + number);
+            System.out.println("Supplier Contact" + number);
             System.out.println("Available " + isAvailable);
             System.out.println("Performance Rating" + rating);
 
