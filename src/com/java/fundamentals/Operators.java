@@ -68,8 +68,8 @@ public class Operators {
         System.out.println("---Purchase Details---" );
         System.out.println("Price After Discount: " + cost);
         System.out.println("Discount Amount: " + priceAfterDiscount);
-        System.out.println("Tax CGST: " +cgstAmount);
-        System.out.println("Tax SGST: " + sgstAmount);
+        System.out.println("Tax CGST(2.5%): " +cgstAmount);
+        System.out.println("Tax SGST(3.0%): " + sgstAmount);
         System.out.println("Final price:" + finalPrice);
     }
     }
