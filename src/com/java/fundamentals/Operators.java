@@ -73,3 +73,42 @@ public class Operators {
         System.out.println("Final price:" + finalPrice);
     }
     }
+
+    //Product Price:1000
+//Discount Percentage:10
+//Quantity:2
+
+class ProductPurchase{
+
+    public static void main(String[] args){
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("----Purchase Details----");
+
+        System.out.print("Enter price of the product:");
+        double cost = sc.nextDouble();
+
+        System.out.print("Enter Discount Percentage: ");
+        double discountAmount = sc.nextDouble();
+        discountAmount= (cost * discountAmount)/100.0;
+
+        double priceAfterDiscount =  cost - discountAmount;
+
+        System.out.print("Enter Quantity: ");
+        int quanity = sc.nextInt();
+
+        double cgstAmount =(priceAfterDiscount *0.025)*quanity;
+        double sgstAmount=(priceAfterDiscount* 0.030)*quanity;
+        double totalTax = cgstAmount +sgstAmount;
+        double finalPrice =  (priceAfterDiscount)*quanity+ totalTax;
+
+        System.out.println("---Purchase Details---" );
+        System.out.println("Total Cost of the products: " + cost*quanity );
+        System.out.println("Total Discount Amount: " + discountAmount*quanity);
+        System.out.println("Price After Discount: " + priceAfterDiscount*quanity);
+
+        System.out.println("Tax CGST(2.5%): " +cgstAmount);
+        System.out.println("Tax SGST(3.0%): " + sgstAmount);
+        System.out.println("Final price:" + finalPrice);
+    }
+}
