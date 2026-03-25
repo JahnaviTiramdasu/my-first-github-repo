@@ -5,7 +5,7 @@ public class Order {
     int id;
     String customerName;
     String productName;
-    boolean isAccepted;
+    boolean isavailable;
     double totalAmount;
     double discountAmount;
     double finalPrice;
@@ -16,7 +16,7 @@ public class Order {
         this.id=1;
         this.customerName ="Venky";
         this.productName="laptop";
-        this.isAccepted=true;
+        this.isavailable=true;
         this.totalAmount=25000;
         this.discountAmount=1000;
         this.finalPrice=2300.0;
@@ -25,15 +25,17 @@ public class Order {
 
     }
 
-
-    public Order(int id, String customerName, String productName, boolean isAccepted, double totalAmount, double discountAmount, double finalPrice) {
+    public Order(int id, String customerName, String productName, boolean isavailable, double totalAmount, double discountAmount, double finalPrice) {
         this.id=id;
         this.customerName=customerName;
         this.productName=productName;
-        this.isAccepted=isAccepted;
+        this.isavailable=isavailable;
         this.totalAmount=totalAmount;
         this.discountAmount=discountAmount;
         this.finalPrice=finalPrice;
 
     }
+
+
+
 }

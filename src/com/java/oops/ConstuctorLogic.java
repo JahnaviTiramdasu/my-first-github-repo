@@ -12,7 +12,7 @@ public class ConstuctorLogic {
         System.out.println("Address:" + con.address);
         System.out.println("MailID:" + con.mailId);
         System.out.println("ProductName:" + con.productName);
-        System.out.println("Price:" + con.price);
+        System.out.println("Price:" + con.finalprice);
 
         System.out.println("--Customer Details--");
          //args constructer
@@ -36,7 +36,7 @@ public class ConstuctorLogic {
         System.out.println("Address:" + con.address);
         System.out.println("MailID:" + con.mailId);
         System.out.println("ProductName:" + con.productName);
-        System.out.println("Price:" + con.price);
+        System.out.println("Price:" + con.finalprice);
 
 
     }

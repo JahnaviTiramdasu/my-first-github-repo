@@ -4,23 +4,18 @@ public class OrderLogic {
 
     public static void main(String[] args) {
 
+        //no args
         Order order = new Order();
         System.out.println("id:" + order.id);
         System.out.println("CustomerName:" + order.customerName);
         System.out.println("ProductNAme: " + order.productName);
-        System.out.println("OrderDate: " + order.isAccepted);
+        System.out.println("OrderDate: " + order.isavailable);
         System.out.println("Total amount:" + order.totalAmount);
         System.out.println("Tax :" + order.discountAmount);
         System.out.println("Final Price: " + order.finalPrice);
 
-        //=1;
-        //        this.customerName ="Venky";
-        //        this.productName="laptop";
-        //        this.isAccepted=true;
-        //        this.totalAmount=25000;
-        //        this.tax=0.025;
-        //        this.finalPrice=23000;
 
+        //args constructor
         Order order1 = new Order(1, "lakshmi", "Book", false, 300.0, 25.0, 275);
         Order order2 = new Order(2, "Sindhu", "WaterPurifier", true, 10000.0, 2000.0, 8000.0);
         Order order3 = new Order(3, "Meghana", "Air conditioner", true, 450000.0, 5000, 40000);
@@ -34,16 +29,22 @@ public class OrderLogic {
         print(order4);
         print(order5);
 
+
+
     }
 
     public static void print(Order o) {
         System.out.println("id:" + o.id);
         System.out.println("CustomerName:" + o.customerName);
         System.out.println("ProductNAme: " + o.productName);
-        System.out.println("OrderDate: " + o.isAccepted);
+        System.out.println("OrderDate: " + o.isavailable);
         System.out.println("Total amount:" + o.totalAmount);
         System.out.println("Tax :" + o.discountAmount);
         System.out.println("Final Price: " + o.finalPrice);
 
     }
+
+
+
+
 }
