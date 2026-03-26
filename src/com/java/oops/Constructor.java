@@ -11,6 +11,7 @@ public class Constructor {
     double maxRetailPrice;
     String productName;
     double finalprice;
+    int number;
 
     //no args constructor
     Constructor() {
@@ -36,4 +37,21 @@ public class Constructor {
 
     }
 
+    //Assignment 2
+    void updateAddress(String address) {
+        System.out.println("Update address:" + address);
+    }
+
+    //Assignment 3
+    boolean verifyCustomerStatus(int id) {
+        return true;
+    }
+    //Assignment 4
+    void  deactiveAccount(String name){
+        System.out.println(name + "  Account has been deActivated" );
+    }
+    //assignment 5
+    boolean verifyCustomerMobileNumber(int id){
+        return false;
+    }
 }

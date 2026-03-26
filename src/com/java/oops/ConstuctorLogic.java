@@ -22,14 +22,28 @@ public class ConstuctorLogic {
         Constructor customer4 = new Constructor(4,"Sreeja",14,"Nalgonda","sreeja@gmail.com","Sunsreen",1000);
         Constructor customer5 = new Constructor(5,"Kala",39,"Vijayawada","kala@gmail.com", "Conditioner", 1500);
 
-        printCustomer(customer1);
-        printCustomer(customer2);
-        printCustomer(customer3);
-        printCustomer(customer4);
-        printCustomer(customer5);
+        printCustomerDetails(customer1);
+        printCustomerDetails(customer2);
+        printCustomerDetails(customer3);
+        printCustomerDetails(customer4);
+        printCustomerDetails(customer5);
+
+        //Assignment 2
+        customer1.updateAddress("Nalgonda");
+
+        //Assignment 3
+        boolean status = customer3.verifyCustomerStatus(3);
+        System.out.println("Active Customer  " + status);
+
+        // Assignment 5
+        boolean mobileNumberstatus= customer3.verifyCustomerMobileNumber(8977098);
+        System.out.println("Valid Mobile Nmber:" + mobileNumberstatus);
+
+        //Assignment 4
+        customer4.deactiveAccount("Harish");
     }
 
-    public static void printCustomer(Constructor con){
+    public static void printCustomerDetails(Constructor con){
         System.out.println("id:" + con.id);
         System.out.println("name:" + con.name);
         System.out.println("Age:" + con.mailId);
@@ -40,5 +54,8 @@ public class ConstuctorLogic {
 
 
     }
+
+
+
 
 }

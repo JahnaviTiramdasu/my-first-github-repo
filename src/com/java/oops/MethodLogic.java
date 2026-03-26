@@ -24,6 +24,8 @@ public class MethodLogic {
 
         List<Method> productList = m.getProductsBasedOnMinAndMaxPrice(100, 1000);
 
+
+
     }
 }
 

@@ -82,5 +82,7 @@ public class Method {
     List<Method> getProductsBasedOnMinAndMaxPrice(int minPrice, int maxPrice) {
         return null;
     }
+
+
 }
 
