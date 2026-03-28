@@ -31,11 +31,27 @@ public class OrderLogic {
         print(order4);
         print(order5);
 
+        //assignment 6
+        order.totalAmount=8000;
+        order.discountAmount=250;
+        double totalPayableAmount = order.calculateFinalAmount();
+        System.out.println("Final Price:" + totalPayableAmount);
 
+        //assignment7
+        order.updateOrerStatus(OrderStatus.SHIPPED);
+        order.updateOrerStatus(OrderStatus.CANCELLED);
+
+
+        //assignment 8
+        boolean paid = order.isPaid();
+        System.out.println("isPaid:" + paid);
+
+        //assignment 9
+       order3.cancelOrder();
 
 
     }
-
+ // assignment 10
     public static void print(Order o) {
         System.out.println("id:" + o.id);
         System.out.println("CustomerName:" + o.customerName);

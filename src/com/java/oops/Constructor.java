@@ -38,7 +38,7 @@ public class Constructor {
     }
 
     //Assignment 2
-    void updateAddress(String address) {
+    void updateAddress(int id) {
         System.out.println("Update address:" + address);
     }
 
@@ -46,12 +46,14 @@ public class Constructor {
     boolean verifyCustomerStatus(int id) {
         return true;
     }
+
     //Assignment 4
-    void  deactiveAccount(String name){
-        System.out.println(name + "  Account has been deActivated" );
+    void deactiveAccount(String name) {
+        System.out.println(name + "  Account has been deActivated");
     }
+
     //assignment 5
-    boolean verifyCustomerMobileNumber(int id){
+    boolean verifyCustomerMobileNumber(int id) {
         return false;
     }
 }

@@ -29,7 +29,7 @@ public class ConstuctorLogic {
         printCustomerDetails(customer5);
 
         //Assignment 2
-        customer1.updateAddress("Nalgonda");
+        customer1.updateAddress(1);
 
         //Assignment 3
         boolean status = customer3.verifyCustomerStatus(3);
@@ -42,7 +42,7 @@ public class ConstuctorLogic {
         //Assignment 4
         customer4.deactiveAccount("Harish");
     }
-
+            //Assignment 1
     public static void printCustomerDetails(Constructor con){
         System.out.println("id:" + con.id);
         System.out.println("name:" + con.name);

@@ -38,12 +38,33 @@ public class Order {
         this.status=status;
 
     }
+    //assignment 6
+    double calculateFinalAmount(){
+        finalPrice= totalAmount-discountAmount;
+        return  finalPrice;
+    }
 
     //Assignment 7
     //assignment 7
-    OrderStatus statusftheOrder(int id){
-        return null;
+    void updateOrerStatus(OrderStatus status){
+        System.out.println("Updated Status:" + this.status);
+    }
+
+    //assignment 8
+    boolean isPaid() {
+        return this.finalPrice > 0;
+    }
+    //assignment 9
+    void cancelOrder(){
+        if(this.status != OrderStatus.DELIVERED){
+            this.status=OrderStatus.CANCELLED;
+            System.out.println("order cancelled successfully");
+        }else{
+            System.out.println("Order cannot cancel as its already delivered");
+        }
+    }
+
     }
 
 
-}
+
